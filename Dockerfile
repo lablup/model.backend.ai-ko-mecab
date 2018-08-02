@@ -31,8 +31,11 @@ RUN ./autogen.sh \
 
 RUN echo "dicdir = /usr/local/lib/mecab/dic/mecab-ko-dic" > /usr/local/etc/mecabrc
 
-# ready mecab service
+# copy ko-mecap.py , requrements.txt 
 ADD ko-mecap.py /opt/mecab/api
+ADD requirements.txt /opt/mecab/api
+
+# install python pakages
 WORKDIR /opt/mecab/api
 RUN pip3 install -U pip setuptools  \
  && pip3 install -r requirements.txt
