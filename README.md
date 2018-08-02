@@ -1,7 +1,11 @@
 # MeCab Web serice
 * 한국어를 RESTful API로 이용하여 형태소 분석해 주는 서비스
  - 형태소 분석기 Mecab 을 컨테이너 서비스로 구성
+<<<<<<< HEAD
  - 컨테이너 실행 도구 docker-compose로 손쉬운 사용
+=======
+ - 컨테이너 실행 docker-compose로 손쉬운 사용
+>>>>>>> a7c1b3a3ecbd05803b215ecde34014f73adb6039
 * server-komecab
     - MeCab를 이용할 수 있는 RESTful 서비스
 
